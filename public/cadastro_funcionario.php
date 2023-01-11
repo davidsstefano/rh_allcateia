@@ -18,8 +18,8 @@
 
 <body>
 
-     <form id="formlogin" method="POST" enctype="multipart/form-data">
-
+     <!-- <form id="formlogin" method="POST" enctype="multipart/form-data"> -->
+     <form action="../api/api_cadastrousuario.php" method="POST">
           <h1 class="titulo-login">Cadastro funcionario</h1>
 
 
@@ -36,6 +36,12 @@
                <option value="1">Administrador</option>
                <option value="2">Funcionario</option>
           </select>
+          <input type="text" name="cep" placeholder="Cep" maxlength="40" required class="form-input">
+          <input type="text" name="estado" placeholder="Estado" maxlength="40" required class="form-input">
+          <input type="text" name="cidade" placeholder="Cidade" maxlength="40" required class="form-input">
+          <input type="text" name="bairro" placeholder="Bairro" maxlength="40" required class="form-input">
+          <input type="text" name="endereco" placeholder="Endereço" maxlength="40" required class="form-input">
+          <input type="text" name="numero" placeholder="Numero" maxlength="40" required class="form-input">
           <input type="submit" value="Cadastrar">
 
      </form>
