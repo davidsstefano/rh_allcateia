@@ -24,9 +24,9 @@ if (isset($_POST['cpf'])) {
      $numero = addslashes($_POST['numero']);
      $categoria = addslashes($_POST['categoria']);
 
-     var_dump($_POST);
+     // var_dump($_POST);
 
-
+     // exit;
 
      // $sql = "SELECT cpf,email FROM tbl_usuario WHERE cpf = :cpf OR email = :email";
      // $result = $conn->select($sql, array('cpf' => $cpf, 'email' => $email));

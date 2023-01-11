@@ -48,7 +48,7 @@ require_once '../class/retorno.php';
           </div>
           <div class="col-md-3">
                <label for="inputAddress2" class="form-label">Contato</label>
-               <input type="tel" name="nome" class="form-control" id="inputAddress2" placeholder="ex: (ddd)999999999">
+               <input type="tel" name="telefone" class="form-control" id="inputAddress2" placeholder="ex: (ddd)999999999">
           </div>
           <div class="col-5">
                <label for="inputAddress" class="form-label">CPF</label>
@@ -104,12 +104,12 @@ require_once '../class/retorno.php';
 
                <div class="col" id="status">
                     <div class="form-check form-check-inline">
-                         <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox1" value="option1">
+                         <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox1" value="1">
                          <label class="form-check-label" for="inlineCheckbox1">Administrador</label>
                     </div>
 
                     <div class="form-check form-check-inline">
-                         <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox2" value="option2">
+                         <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox2" value="2">
                          <label class="form-check-label" for="inlineCheckbox2">Colaborador</label>
                     </div>
                </div>
