@@ -8,6 +8,7 @@
 </head>
 <body>
      <a href="cadastro_funcionario.php">Cadastro de funcionario</a>
+     <a href="cadastro_cargo.php">Cadastro cargo</a>
 
 </body>
 </html>

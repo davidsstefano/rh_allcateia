@@ -20,26 +20,16 @@
 
      <form id="formlogin" method="POST" enctype="multipart/form-data">
 
-          <h1 class="titulo-login">Cadastro funcionario</h1>
+          <h1 class="titulo-login">Cadastro cargo</h1>
 
 
           <input type="text" name="nome" placeholder="Nome" maxlength="40" required class="form-input">
-          <input type="text" name="sobrenome" placeholder="Sobrenome" maxlength="40" required class="form-input">
-          <input type="email" name="email" placeholder="E-mail" maxlength="40" required class="form-input">
-          <input type="password" name="senha" placeholder="Senha" maxlength="32" required class="form-input">
-          <input type="tel" name="telefone" placeholder="Telefone" maxlength="40" required class="form-input">
-          <input type="text" name="cpf" placeholder="CPF" maxlength="40" required class="form-input">
-          <input type="date" name="nascimento" placeholder="Data-nascimento" maxlength="40" required class="form-input">
-          <input type="date" name="admissao" placeholder="Data-admissão" maxlength="40" required class="form-input">
-          <input type="text" name="cargo" placeholder="Cargo" maxlength="40" required class="form-input">
-          <select name="categoria">
-               <option value="1">Administrador</option>
-               <option value="2">Funcionario</option>
-          </select>
+          
           <input type="submit" value="Cadastrar">
 
      </form>
 
+     
 </body>
 
 
