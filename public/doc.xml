@@ -1,11 +1,11 @@
-<form class="row g-3">
+<!-- <form class="row g-3"> -->
           <div class="col-md-5">
                <label for="inputEmail4" class="form-label">Nome</label>
                <input type="nome" class="form-control" id="inputEmail4" value="Mark">
           </div>
           <div class="col-md-5">
                <label for="inputPassword4" class="form-label">Sobrenome</label>
-               <input type="password" class="form-control" id="inputPassword4">
+               <input type="text" class="form-control" id="inputPassword4">
           </div>
           <div class="col-md-5">
                <label for="inputAddress" class="form-label">email</label>
@@ -13,7 +13,7 @@
           </div>
           <div class="col-md-5">
                <label for="inputAddress2" class="form-label">Senha</label>
-               <input type="text" class="form-control" id="inputAddress2" placeholder="">
+               <input type="password" class="form-control" id="inputAddress2" placeholder="">
           </div>
 
           <div class="col-5">
@@ -22,7 +22,7 @@
           </div>
           <div class="col-md-3">
                <label for="inputAddress2" class="form-label">Contato</label>
-               <input type="text" class="form-control" id="inputAddress2" placeholder="ex: (ddd)999999999">
+               <input type="tel" class="form-control" id="inputAddress2" placeholder="ex: (ddd)999999999">
           </div>
 
           <div class="col-md-2">
@@ -79,6 +79,7 @@
                <label for="inputState" class="form-label">Endereço</label>
                <input type="text" class="form-control" id="inputCity">
           </div>
+          <input type="text" name="cep" placeholder="Cep" id="cep" onblur="pesquisacep(this.value);" maxlength="40" required class="form-input"></input>
           <div class="col-md-1">
                <label for="inputZip" class="form-label">Número</label>
                <input type="text" class="form-control" maxlength="3" id="inputZip">
