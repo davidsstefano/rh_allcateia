@@ -12,32 +12,31 @@
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="../js/login.js"></script>
-     <link rel="stylesheet" href="../css/style.css">
-     <title>Document</title>
+     
+     <title>Cadastro funcionario</title>
 </head>
 
 <body>
-     <div class="container text-center">
-          <div class="row">
-               <form class="col align-self-center" id="formlogin" method="POST" enctype="multipart/form-data">
-                    <!-- <form action="../api/api_login.php" method="POST">  -->
-                    <h1 class="titulo-login">Login</h1>
+     
+               <form id="formlogin" method="POST" enctype="multipart/form-data">
+                  
+                    <h1 class="titulo-login">Cadastro funcionario</h1>
 
-                    <div id="gg" class="form-floating mb-3">
-                         <input class="form-control caixa-texto-login " type="email" name="email" placeholder="E-mail" maxlength="40" required class="form-input">
-                         <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating">
-                         <input class="form-control caixa-texto-login " type="password" name="senha" placeholder="Senha" maxlength="32" required class="form-input">
-                         <label for="floatingInput">Senha</label>
-                    </div>
-                    <div id="botao-entrar" class="d-grid gap-2 col-6 mx-auto">
-                         <input class="btn btn-primary" type="submit" value="Entrar">
-                    </div>
+                   
+                         <input type="text" name="nome" placeholder="Nome" maxlength="40" required class="form-input">
+                         <input type="text" name="sobrenome" placeholder="Sobrenome" maxlength="40" required class="form-input">
+                         <input type="email" name="email" placeholder="E-mail" maxlength="40" required class="form-input">
+                         <input type="password" name="senha" placeholder="Senha" maxlength="32" required class="form-input">
+                         <input type="tel" name="telefone" placeholder="Telefone" maxlength="40" required class="form-input">
+                         <input type="text" name="cpf" placeholder="CPF" maxlength="40" required class="form-input">     
+                         <input type="date" name="cpf" placeholder="CPF" maxlength="40" required class="form-input">      
+                                       
+                        
+                                          
+                         <input  type="submit" value="Entrar">
+                  
                </form>
-               <a href="recupera.php">
-                    <p class="recuperar-senha">Esqueceu sua Senha?</p>
-               </a>
+              
           </div>
 
      </div>
