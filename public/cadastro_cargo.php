@@ -18,10 +18,11 @@
 
 <body>
 
-     <form id="formlogin" method="POST" enctype="multipart/form-data">
+     <!-- <form id="formlogin" method="POST" enctype="multipart/form-data"> -->
+          <form action="../api/api_cadastrocargo.php" method="POST">
 
           <h1 class="titulo-login">Cadastro cargo</h1>
-          <input type="text" name="nome" placeholder="Nome" maxlength="40" required class="form-input">
+          <input type="text" name="cargo" placeholder="Nome" maxlength="40" required class="form-input">
           <input type="submit" value="Cadastrar">
 
      </form>

@@ -6,26 +6,28 @@ require_once '../class/conn.php';
 $conn = new ConnDb();
 $controle = 0; //retorno padrao de erro.
 
+
+
 $cargo = addslashes($_POST['cargo']);
 
 
-
+// print_r($cargo);
+// exit; 
 
 if (isset($_POST['cargo'])) {
-    // print_r($senha);
-    // exit;  
+    
 
 
-    $sql = "SELECT nome FROM tbl_cadastro WHERE cargo = :cargo";
+    $sql = "SELECT nome FROM tbl_cargo WHERE nome = :cargo";
     $result = $conn->select($sql, array('cargo' => $cargo));
 }
-//     print_r($result[0]['categoria']);
-//     exit;
+    // print_r($result);
+    // exit;
 if (count($result) == 0) {
 
     $sql =
 
-        "INSERT INTO  tbl_cadastro (nome)
+        "INSERT INTO  tbl_cargo (nome)
         VALUES(:cargo)";
 
     $novo_id = $conn->insert($sql, $_POST);
@@ -33,8 +35,9 @@ if (count($result) == 0) {
 
 if (isset($novo_id)) {
 
-    $json = ["erro" => 0, "msg" => "cadastrado com sucesso!"];
+    echo  "cadastrado com sucesso!";
+    header("Location: ../public/cadastro_cargo.php");
 } else {
 
-    $json = ["erro" => 1, "msg" => "Erro ao cadastrar!"];
+    echo "Erro ao cadastrar!";
 }
