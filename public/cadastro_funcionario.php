@@ -18,6 +18,7 @@ require_once '../class/retorno.php';
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="../js/cadastro_funcionario.js"></script>
+     <link rel="stylesheet" href="../css/cadastro.css">
 
      <title>Cadastro funcionario</title>
 </head>
