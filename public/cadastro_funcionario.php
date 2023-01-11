@@ -17,7 +17,7 @@ require_once '../class/retorno.php';
      <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <script src="../js/login.js"></script>
+     <script src="../js/cadastro_funcionario.js"></script>
 
      <title>Cadastro funcionario</title>
 </head>
@@ -51,11 +51,11 @@ require_once '../class/retorno.php';
                <option value="1">Administrador</option>
                <option value="2">Funcionario</option>
           </select>
-          <input type="text" name="cep" placeholder="Cep" maxlength="40" required class="form-input">
-          <input type="text" name="estado" placeholder="Estado" maxlength="40" required class="form-input">
-          <input type="text" name="cidade" placeholder="Cidade" maxlength="40" required class="form-input">
-          <input type="text" name="bairro" placeholder="Bairro" maxlength="40" required class="form-input">
-          <input type="text" name="endereco" placeholder="Endereço" maxlength="40" required class="form-input">
+          <input type="text" name="cep" placeholder="Cep" id="cep" onblur="pesquisacep(this.value);" maxlength="40" required class="form-input">
+          <input type="text" name="estado" placeholder="Estado"  id="uf"  maxlength="40" required class="form-input">
+          <input type="text" name="cidade" placeholder="Cidade" maxlength="40" id="cidade" required class="form-input">
+          <input type="text" name="bairro" placeholder="Bairro" maxlength="40" id="bairro" required class="form-input">
+          <input type="text" name="endereco" placeholder="Endereço" maxlength="40" id="endereco" required class="form-input">
           <input type="text" name="numero" placeholder="Numero" maxlength="40" required class="form-input">
           <input type="submit" value="Cadastrar">
 
