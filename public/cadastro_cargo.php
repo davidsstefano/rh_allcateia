@@ -21,10 +21,7 @@
      <form id="formlogin" method="POST" enctype="multipart/form-data">
 
           <h1 class="titulo-login">Cadastro cargo</h1>
-
-
           <input type="text" name="nome" placeholder="Nome" maxlength="40" required class="form-input">
-          
           <input type="submit" value="Cadastrar">
 
      </form>
