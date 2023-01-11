@@ -7,6 +7,7 @@
      <title>ADM</title>
 </head>
 <body>
-     <h1>Bem vindo a pagina de adm!!!</h1>
+     <a href="cadastro_funcionario.php">Cadastro de funcionario</a>
+
 </body>
 </html>
