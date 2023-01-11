@@ -1,3 +1,9 @@
+<?php
+
+require_once '../class/retorno.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,6 +38,15 @@
           <input type="date" name="nascimento" placeholder="Data-nascimento" maxlength="40" required class="form-input">
           <input type="date" name="admissao" placeholder="Data-admissão" maxlength="40" required class="form-input">
           <input type="text" name="cargo" placeholder="Cargo" maxlength="40" required class="form-input">
+          <select name="cargo" required>
+               <option value="0" selected disabled>Selecione o Cargo:</option>
+
+               <?php
+               foreach ($db_cargo as $output) {
+                    echo '<option value="' . $output['id_cargo'] . '">' . $output['nome'] . '</option>';
+               }
+               ?>
+          </select>
           <select name="categoria">
                <option value="1">Administrador</option>
                <option value="2">Funcionario</option>

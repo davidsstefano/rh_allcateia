@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<?php
 
+require_once '../class/retorno.php';
+
+?>
 
 <head>
      <meta charset="UTF-8">
