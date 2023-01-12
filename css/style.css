@@ -1,8 +1,8 @@
-body {
-    background-color: rgb(69, 11, 107);
+body{
+    background-color: #1F1B2C;
 }
 
-#formlogin {
+#formlogin{
     justify-content: center;
     background-color: rgb(248, 248, 248);
     border-radius: 20px;
@@ -10,29 +10,38 @@ body {
     display: flex;
     flex-direction: column;
     height: 400px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-.container {
+.container{
     margin-top: 20vh;
     width: 500px;
 }
 
-.form-floating {
+.form-floating{
     width: 350px;
 }
-
-#botao-entrar {
-    margin-top: 30px;
-    width: 74%;
-    height: 10%;
+.btn{
+    background-color: #FFBD00;
+    border-style: none;
 }
 
-.titulo-login {
+.btn:hover{
+    background-color: #c59100;
+}
+
+
+#botao-entrar{
+    margin-top: 30px;
+    width: 74%;
+    height: 10%;   
+}
+
+.titulo-login{
     height: 20%;
 }
 
-.recuperar-senha {
+.recuperar-senha{
     text-align: center;
     margin: 3vh;
     color: rgb(248, 248, 248);
@@ -40,6 +49,10 @@ body {
     text-decoration: none;
 }
 
-a {
+a{
     text-decoration: none;
+}
+
+#logo{
+    margin-bottom: 40px;
 }

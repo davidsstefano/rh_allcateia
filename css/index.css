@@ -1,0 +1,52 @@
+body{
+    background-color: #1F1B2C;
+}
+
+.navbar{
+    margin-top: 3vh;
+}
+
+
+
+.container{
+    margin-top: 180px;
+    
+}
+
+#titulo-main{
+    color: aliceblue;
+    font-size: 60px;
+
+}
+
+.btn{
+    background-color: #FFBD00;
+    width: 190px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+}
+
+#botao-suporte{
+    width: 160px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+#botao-inicio{
+    margin-top: 50px;
+   
+}
+
+.btn:hover{
+    background-color: #c59100;
+}
+
+strong{
+    color: #FFBD00;
+}
+

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,6 +18,8 @@
 
 <body>
      <div class="container text-center">
+
+          <img src="../img/logoallcateia.png" id="logo" width="300">
           <div class="row">
                <form class="col align-self-center" id="formlogin" method="POST" enctype="multipart/form-data">
                     <!-- <form action="../api/api_login.php" method="POST">  -->
