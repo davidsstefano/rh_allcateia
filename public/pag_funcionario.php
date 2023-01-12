@@ -3,6 +3,8 @@
 require_once '../class/retorno.php';
 require_once '../class/data_hora.php';
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +18,10 @@ require_once '../class/data_hora.php';
 </head>
 
 <body>
-     <h1>Ola</h1>
+     <h1>Ola <?php foreach ($db_usuario as $output) {
+                    echo   $output['nome'] ;echo " ";
+                    echo $output['sobrenome'];
+               }; ?> </h1>
 
      <form action="../api/api_registrarponto.php" method="POST">
 
