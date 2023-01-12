@@ -6,6 +6,6 @@ session_start();
 
 session_destroy();
 
-header("location:../public/index.php");
+header("location:../index.html");
 
 exit();
