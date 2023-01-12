@@ -16,12 +16,14 @@ require_once '../class/data_hora.php';
 </head>
 
 <body>
-     <h1><?php 
-          
-          echo $dia;
-          echo "<br>";
-          echo $hora;
-          ?></h1>
+     <h1>Ola</h1>
+
+     <form action="../api/api_registrarponto.php" method="POST">
+
+          <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
+          <input type="submit" nome="cadastrar" value="registrar ponto" class="form-btn">
+
+     </form>
 
 
 </body>
