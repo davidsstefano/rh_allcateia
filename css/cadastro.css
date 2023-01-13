@@ -1,4 +1,63 @@
-#status{
+/* nav-fixa */
+
+#btn-colab {
+    background-color: rgb(39, 39, 39);
+    border: none;
+}
+
+#user {
     display: flex;
-    gap:70px;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 6px;
+    background-color: #212529;
+    border: none;
+    font-weight: 500;
+}
+
+#jj {
+    margin-left: 40px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.nav {
+    align-items: center;
+}
+
+.nav-link {
+    color: aliceblue;
+    align-items: center;
+}
+
+#status {
+    display: flex;
+    gap: 70px;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+}
+
+btn {
+    justify-content: center;
+    align-items: center;
+}
+
+#status {
+    margin-top: 30px;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 00;
+}
+
+#gg {
+    color: rgb(197, 197, 197);
+}
+
+.titulo-login {
+    margin: 60px;
+    text-align: center;
 }

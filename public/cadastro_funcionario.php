@@ -24,9 +24,70 @@ require_once '../class/retorno.php';
 </head>
 
 <body>
+     <nav class="navbar navbar-dark bg-dark">
 
-     <!-- <form id="formlogin" method="POST" enctype="multipart/form-data"> -->
-     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3" enctype="multipart/form-data">
+
+          <div id="menu" class="container-md">
+               <!-- <a class="navbar-brand">
+<img src="../img/log.png" width="120" alt="" href="/public/pag_adm.php">
+</a> -->
+
+               <ul class="nav nav-pills">
+                    <li class="nav-item">
+                         <img src="../img/log.png" width="120" alt="" href="/public/pag_adm.php">
+                    </li>
+
+                    <div id="jj" class="nav nav-pills">
+                         <li class="nav-item">
+                              <a class="nav-link" href="pag_adm.php">Início</a>
+                         </li>
+
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Colaborador</a>
+                              <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="cadastro_funcionario.php">Cadastrar Colaborador</a></li>
+                                   <li><a class="dropdown-item" href="#">Cadastrar Cargo</a></li>
+
+
+                              </ul>
+                         </li>
+                    </div>
+                    <!-- <li class="nav-item">
+     <a class="nav-link disabled">Disabled</a>
+</li> -->
+               </ul>
+
+
+               <div class="dropdown">
+                    <button type="button" id="user" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+                         <img id="img" src="../img/<?php
+                                                       foreach ($db_usuario as $output) {
+                                                            echo $output['img'];
+                                                       }
+                                                       ?>" alt="Perfil" id="imagem" width="70" heigh="70" class="rounded-circle"></img>
+
+                         <p>Bem vindo <?php foreach ($db_usuario as $output) {
+                                             echo "<br>";
+                                             echo   $output['nome'];
+                                             echo " ";
+                                             echo $output['sobrenome'];
+                                        }; ?> </p>
+
+                         <ul id="test" class="dropdown-menu dropdown-menu-end ">
+                              <li><a class="dropdown-item" href="#">Perfil</a></li>
+
+                              <span class="visually-hidden">Toggle Dropend</span>
+                              <li>
+                                   <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="">Sair</a></li>
+                         </ul>
+                    </button>
+               </div>
+     </nav>
+
+     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3">
           <h1 class="titulo-login">Cadastro funcionario</h1>
 
 
@@ -38,14 +99,23 @@ require_once '../class/retorno.php';
                <label for="inputPassword4" class="form-label">Sobrenome</label>
                <input type="text" name="sobrenome" class="form-control" id="inputPassword4" maxlength="40" required>
           </div>
+
+
+
+
           <div class="col-md-5">
                <label for="inputAddress" class="form-label">email</label>
                <input type="text" name="email" class="form-control" id="inputAddress" placeholder="" maxlength="40" required>
           </div>
+
+
+
           <div class="col-md-5">
                <label for="inputAddress2" class="form-label">Senha</label>
                <input type="password" name="senha" class="form-control" id="inputAddress2" placeholder="" maxlength="32" required>
           </div>
+
+
           <div class="col-md-3">
                <label for="inputAddress2" class="form-label">Contato</label>
                <input type="tel" name="telefone" class="form-control" id="inputAddress2" placeholder="ex: (ddd)999999999">
@@ -58,12 +128,12 @@ require_once '../class/retorno.php';
                <label for="inputZip" class="form-label">Data-nascimento</label>
                <input type="date" name="nascimento" class="form-control" id="inputZip" placeholder="" maxlength="12" required>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
                <label for="inputState" class="form-label">Data-admissão</label>
                <input type="date" name="admissao" class="form-control" id="inputZip" placeholder="" maxlength="12" required>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-3">
                <label for="inputState" class="form-label">Cargo</label>
                <select name="cargo" id="inputState" class="form-select" required>
                     <option value="0" selected disabled>Selecione o Cargo:</option>
@@ -75,7 +145,7 @@ require_once '../class/retorno.php';
                     ?>
                </select>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
                <label for="cep" class="form-label">CEP</label>
                <input type="text" name="cep" class="form-control" placeholder="CEP" id="cep" onblur="pesquisacep(this.value);" maxlength="40" required class="form-input">
           </div>
@@ -83,7 +153,7 @@ require_once '../class/retorno.php';
                <label for="uf" class="form-label">Estado</label>
                <input type="text" name="estado" class="form-control" placeholder="Estado" id="uf" maxlength="40" required>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
                <label for="cidade" class="form-label">Cidade</label>
                <input type="text" name="cidade" class="form-control" placeholder="Cidade" maxlength="40" id="cidade" required>
           </div>
@@ -100,33 +170,41 @@ require_once '../class/retorno.php';
                <label for="inputZip" class="form-label">Número</label>
                <input type="text" class="form-control" name="numero" placeholder="Numero" maxlength="5" required id="inputZip">
           </div>
-          <div>
 
+          <div>
                <div class="col" id="status">
-                    <div class="form-check form-check-inline">
+                    <p id="gg">Status:</p>
+
+
+                    <div class="form-check form-check-inline col-md-1">
                          <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox1" value="1">
-                         <label class="form-check-label" for="inlineCheckbox1">Administrador</label>
+                         <label class="form-check-label" for="inlineCheckbox1">administrador</label>
                     </div>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline ">
                          <input class="form-check-input" type="radio" name="categoria" id="inlineCheckbox2" value="2">
-                         <label class="form-check-label" for="inlineCheckbox2">Colaborador</label>
+                         <label class="form-check-label" for="inlineCheckbox2">colaborador</label>
                     </div>
                </div>
-
           </div>
 
-          <div>
-               <label for="img">Insira sua o foto: </label>
-               <input type="file" name="img" placeholder="img" maxlength="45" required class="form-input">
-          </div>
 
-          <div class="col-12">
+
+          <div id="button" class="col-md-1">
                <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+
+          <div class="col-md-1">
+               <label for="inputZip" class="form-label">adiciona img</label>
+               <input type="file" class="form-control" name="img" placeholder="Numero" maxlength="5" required id="inputZip">
           </div>
 
 
      </form>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
 
 </body>
 
