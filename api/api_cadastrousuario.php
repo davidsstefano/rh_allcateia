@@ -10,14 +10,6 @@ require_once '../functions/carregar_foto.php';
      $controle = 0; //retorno padrao de erro.
 
      if (isset($_POST['cpf'])) {
-
-
-         
-          
-
-       
-   
-
      $nome = addslashes($_POST['nome']);
      $sobrenome = addslashes($_POST['sobrenome']);
      $email = addslashes($_POST['email']);
@@ -35,11 +27,6 @@ require_once '../functions/carregar_foto.php';
      $numero = addslashes($_POST['numero']);
      $categoria = addslashes($_POST['categoria']);
      $img = $nomeArquivo;
-
-     // var_dump($nomeArquivo);
-
-     // exit;
-
 
      // $sql = "SELECT cpf,email FROM tbl_usuario WHERE cpf = :cpf OR email = :email";
      // $result = $conn->select($sql, array('cpf' => $cpf, 'email' => $email));
