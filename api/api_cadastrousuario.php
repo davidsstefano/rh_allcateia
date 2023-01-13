@@ -1,12 +1,23 @@
 <?php
 
 require_once '../class/conn.php';
+require_once '../functions/carregar_foto.php';
 
 
-$conn = new ConnDb();
-$controle = 0; //retorno padrao de erro.
+// echo($nomeArquivo);
 
-if (isset($_POST['cpf'])) {
+     $conn = new ConnDb();
+     $controle = 0; //retorno padrao de erro.
+
+     if (isset($_POST['cpf'])) {
+
+
+         
+          
+
+       
+   
+
      $nome = addslashes($_POST['nome']);
      $sobrenome = addslashes($_POST['sobrenome']);
      $email = addslashes($_POST['email']);
@@ -23,23 +34,25 @@ if (isset($_POST['cpf'])) {
      $endereco = addslashes($_POST['endereco']);
      $numero = addslashes($_POST['numero']);
      $categoria = addslashes($_POST['categoria']);
+     $img = $nomeArquivo;
 
-     // var_dump($_POST);
+     // var_dump($nomeArquivo);
 
      // exit;
+
 
      // $sql = "SELECT cpf,email FROM tbl_usuario WHERE cpf = :cpf OR email = :email";
      // $result = $conn->select($sql, array('cpf' => $cpf, 'email' => $email));
 
 
-     $sql = "INSERT INTO  tbl_usuario (nome,sobrenome,email,senha,telefone,cpf,nascimento,admissao,cargo,cep,estado,cidade,bairro,endereco,numero,categoria)
-          VALUES(:nome,:sobrenome,:email,:senha,:telefone,:cpf,:nascimento,:admissao,:cargo,:cep,:estado,:cidade,:bairro,:endereco,:numero,:categoria)";
+     $sql = "INSERT INTO  tbl_usuario (nome,sobrenome,email,senha,telefone,cpf,nascimento,admissao,cargo,cep,estado,cidade,bairro,endereco,numero,categoria,img)
+          VALUES(:nome,:sobrenome,:email,:senha,:telefone,:cpf,:nascimento,:admissao,:cargo,:cep,:estado,:cidade,:bairro,:endereco,:numero,:categoria,:img)";
 
      $novo_id = $conn->insert($sql, array(
           'nome' => $nome, 'sobrenome' => $sobrenome, 'email' => $email,
           'senha' => $senha, 'telefone' => $telefone, 'cpf' => $cpf, 'nascimento' => $nascimento, 'admissao' => $admissao,
           'cargo' => $cargo, 'cep' => $cep, 'estado' => $estado, 'cidade' => $cidade, 'bairro' => $bairro,
-          'endereco' => $endereco, 'numero' => $numero, 'categoria' => $categoria
+          'endereco' => $endereco, 'numero' => $numero, 'categoria' => $categoria, 'img' => $img
      ));
 }
 

@@ -26,7 +26,7 @@ require_once '../class/retorno.php';
 <body>
 
      <!-- <form id="formlogin" method="POST" enctype="multipart/form-data"> -->
-     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3">
+     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3" enctype="multipart/form-data">
           <h1 class="titulo-login">Cadastro funcionario</h1>
 
 
@@ -116,8 +116,11 @@ require_once '../class/retorno.php';
 
           </div>
 
+          <div>
+               <label for="img">Insira sua o foto: </label>
+               <input type="file" name="img" placeholder="img" maxlength="45" required class="form-input">
           </div>
-          
+
           <div class="col-12">
                <button type="submit" class="btn btn-primary">Cadastrar</button>
           </div>

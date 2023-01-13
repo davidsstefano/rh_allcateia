@@ -29,6 +29,10 @@ require_once '../class/data_hora.php';
                     echo " ";
                     echo $output['sobrenome'];
                }; ?> </h1>
+     <img src="../img/<?php foreach ($db_usuario as $output) {
+
+                              echo $output['img'];
+                         } ?>" alt="Imagem-Usuario">
 
      <form action="../api/api_registrarponto.php" method="POST">
 
