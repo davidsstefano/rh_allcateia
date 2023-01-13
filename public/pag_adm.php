@@ -20,7 +20,18 @@ require_once '../class/retorno.php';
 </head>
 
 <body>
-     <a href="../api/logout.php" class="badge badge-danger">Sair</a>
+
+     <h1>Ola <?php foreach ($db_usuario as $output) {
+                    echo   $output['nome'];
+                    echo " ";
+                    echo $output['sobrenome'];
+                    echo "<br>";
+               }; ?> </h1>
+     <img src="../img/<?php foreach ($db_usuario as $output) {
+
+                              echo $output['img'];
+                         } ?>" alt="Imagem-Usuario">
+     <button type="button" class="btn btn-danger"><a href="../api/logout.php" class="link-light">Sair</a></button>
      <a href="cadastro_funcionario.php">Cadastro de funcionario</a>
      <a href="cadastro_cargo.php">Cadastro cargo</a>
 

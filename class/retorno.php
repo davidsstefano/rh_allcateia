@@ -19,7 +19,7 @@ $sql = "SELECT * FROM  tbl_cargo";
 $db_cargo = $conn->select($sql, []);
 
 
-$sql = "SELECT nome,sobrenome FROM  tbl_usuario where id_usuario = $_SESSION[id_usuario]";
+$sql = "SELECT nome,sobrenome,img FROM  tbl_usuario where id_usuario = $_SESSION[id_usuario]";
 $db_usuario = $conn->select($sql, []);
 
 
