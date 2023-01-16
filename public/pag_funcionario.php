@@ -22,6 +22,7 @@ require_once '../class/nav_funcionario.php';
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../css/nav.css">
      <link rel="stylesheet" href="../css/pag_funcionario.css">
+     <script src="../js/funcionario.js"></script>
      <title>ADM</title>
 </head>
 
@@ -37,7 +38,8 @@ require_once '../class/nav_funcionario.php';
                     <p class="mx-auto" style="width: 40px;"><?php print_r($hora) ?></p>
 
                </div>
-               <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
+               <input type="hidden" name="id_usuario" id="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
+               <input type="hidden" name="data_atual" id="data_atual" value="<?php $dia ; ?>" />
                <input type="submit" nome="cadastrar" value="registrar ponto" class="btn form-btn">
 
           </form>
@@ -56,6 +58,7 @@ require_once '../class/nav_funcionario.php';
                 </tr>
             </thead>
         </table>
+        <div id="divhorario"></div>
        
      
 
