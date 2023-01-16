@@ -1,0 +1,56 @@
+#formlogin {
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.container {
+    margin-top: 20vh;
+    width: 500px;
+}
+
+.form-floating {
+    width: 350px;
+}
+
+.btn {
+    background-color: #FFBD00;
+    border-style: none;
+    /* width: 400px;
+    margin-left: 500px; */
+}
+
+.btn:hover {
+    background-color: #c59100;
+}
+
+#botao-entrar {
+    margin-top: 30px;
+    width: 74%;
+    height: 10%;
+}
+
+.titulo-login {
+    height: 20%;
+}
+
+.recuperar-senha {
+    text-align: center;
+    margin: 3vh;
+    color: rgb(248, 248, 248);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    margin-bottom: 40px;
+}

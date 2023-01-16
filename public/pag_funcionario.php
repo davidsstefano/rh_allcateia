@@ -21,17 +21,27 @@ require_once '../class/nav_funcionario.php';
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../css/nav.css">
-     <link rel="stylesheet" href="pag_funcionario.css">
+     <link rel="stylesheet" href="../css/pag_funcionario.css">
      <title>ADM</title>
 </head>
 
 <body>
 
      <div class="body">
-          <form action="../api/api_registrarponto.php" method="POST">
-
+          <form action="../api/api_registrarponto.php" class="col align-self-center" id="formlogin" method="POST" enctype="multipart/form-data">
+               <div id="gg" class="form-floating mb-3">
+                    <p class="mx-auto" style="width: 80px;"><?php print_r($dia)?></p>
+                    
+               </div>
+               <div id="gg" class="form-floating mb-3">
+                    <p class="mx-auto" style="width: 40px;"><?php print_r($hora)?></p>
+                    
+               </div>
                <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
-               <input type="submit" nome="cadastrar" value="registrar ponto" class="form-btn">
+               <div id="botao-entrar" class="d-grid gap-1 col-4 mx-auto">
+                    <input type="submit" name="cadastrar" value="registrar ponto" class="btn btn-primary">
+               </div>
+
 
           </form>
      </div>

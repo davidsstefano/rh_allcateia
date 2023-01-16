@@ -17,7 +17,7 @@
                </li>
 
                <li class="nav-item dropdown">
-                    <a class="nav-link" href="../public/historico_ponto.php">Meu historico de ponto</a>
+                    <a class="nav-link" href="../public/historico_ponto.php">Histórico de ponto</a>
                    
                </li>
           </div>
