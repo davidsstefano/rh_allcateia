@@ -39,8 +39,8 @@ require_once '../class/nav_funcionario.php';
 
                </div>
                <input type="hidden" name="id_usuario" id="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
-               <input type="hidden" name="data_atual" id="data_atual" value="<?php $dia ; ?>" />
-               <input type="submit" nome="cadastrar" value="registrar ponto" class="btn form-btn">
+              
+               <input type="submit" name="cadastrar" value="registrar ponto" class="btn form-btn">
 
           </form>
      </div>
