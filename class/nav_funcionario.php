@@ -28,7 +28,7 @@
 
 
      <div class="dropdown">
-          <button type="button" id="user" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+         
 
                <img id="img" src="../img/<?php
                                              foreach ($db_usuario as $output) {
@@ -36,23 +36,16 @@
                                              }
                                              ?>" alt="Perfil" id="imagem" width="70" heigh="70" class="rounded-circle"></img>
 
-               <p>Bem vindo <?php foreach ($db_usuario as $output) {
+               <p class="nome-usu">Bem vindo <?php foreach ($db_usuario as $output) {
                                    echo "<br>";
                                    echo   $output['nome'];
                                    echo " ";
                                    echo $output['sobrenome'];
                               }; ?> </p>
 
-               <ul id="test" class="dropdown-menu dropdown-menu-end ">
-                    <li><a class="dropdown-item" href="cadastro_cargo.php">Perfil</a></li>
-
-                    <span class="visually-hidden">Toggle Dropend</span>
-                    <li>
-                         <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="../public/logout.php">Sair</a></li>
-               </ul>
-          </button>
-          <li><a class="nav-link" href="../public/logout.php">Sair</a></li>
+              
+        
+          
      </div>
+     <li><a class="nav-link" href="../public/logout.php">Sair</a></li>
 </nav>

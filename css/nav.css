@@ -1,7 +1,3 @@
-body {
-    background-color: aqua;
-}
-
 #btn-colab {
     background-color: rgb(39, 39, 39);
     border: none;
@@ -31,4 +27,8 @@ body {
 .nav-link {
     color: aliceblue;
     align-items: center;
+}
+
+.nome-usu {
+    color: aliceblue;
 }

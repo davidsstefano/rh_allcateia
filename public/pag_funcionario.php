@@ -21,19 +21,20 @@ require_once '../class/nav_funcionario.php';
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../css/nav.css">
+     <link rel="stylesheet" href="pag_funcionario.css">
      <title>ADM</title>
 </head>
 
 <body>
 
+     <div class="body">
+          <form action="../api/api_registrarponto.php" method="POST">
 
-     <form action="../api/api_registrarponto.php" method="POST">
+               <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
+               <input type="submit" nome="cadastrar" value="registrar ponto" class="form-btn">
 
-          <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
-          <input type="submit" nome="cadastrar" value="registrar ponto" class="form-btn">
-
-     </form>
-
+          </form>
+     </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
