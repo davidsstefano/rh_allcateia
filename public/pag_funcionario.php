@@ -42,6 +42,21 @@ require_once '../class/nav_funcionario.php';
 
           </form>
      </div>
+     <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="col-2">Data</th>
+                    <th class="col-2">Entrada</th>
+                    <th class="col-2"></th>
+                    <th class="col-2">Intervato</th>
+                    <th class="col-2"></th>
+                    <th class="col-2">Saida</th>
+
+
+                </tr>
+            </thead>
+        </table>
+       
      
 
 </body>
