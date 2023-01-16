@@ -66,7 +66,7 @@ function fncenviar_ponto() {
             console.log(data.controle);
             if (data.controle == 1) {
 
-                alert("Sucesso!");
+                alert("Ponto cadastrado com sucesso!!!");
                 document.location.reload(true);
 
 
