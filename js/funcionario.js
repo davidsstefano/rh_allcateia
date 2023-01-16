@@ -3,6 +3,13 @@ $(document).ready(function() {
     fncCarregahorario();
 
 
+    $('#enviar_ponto').submit(function(e) {
+        e.preventDefault();
+        fncenviar_ponto();
+
+        return (false);
+    });
+
 });
 
 function fncCarregahorario() {
@@ -50,3 +57,23 @@ function fncCarregahorario() {
 
         })
 };
+
+
+function fncenviar_ponto() {
+
+    $.post("../api/api_registrarponto.php", $('#enviar_ponto').serialize(),
+        function(data, textStatus, jqXHR) {
+            console.log(data.controle);
+            if (data.controle == 1) {
+
+                alert("Sucesso!");
+                document.location.reload(true);
+
+
+            } else {
+                alert("Limite 4 restros por dia!!!");
+
+            }
+        }, "json"
+    );
+}

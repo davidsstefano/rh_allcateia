@@ -29,7 +29,7 @@ require_once '../class/nav_funcionario.php';
 <body>
 
      <div class="body">
-          <form action="../api/api_registrarponto.php" class="col align-self-center" id="formlogin" method="POST" enctype="multipart/form-data">
+          <form id="enviar_ponto" class="col align-self-center" method="POST" enctype="multipart/form-data">
                <div id="gg" class="form-floating mb-3">
                     <p class="mx-auto" style="width: 80px;"><?php print_r($exibir_data) ?></p>
 
