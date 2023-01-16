@@ -17,6 +17,8 @@ function fncCarregahorario() {
 
 
 
+
+
     //     console.log(usuario);
 
     //     $('#divhorario').html('<div class="spinner-border text-primary" role="status">\
@@ -39,9 +41,9 @@ function fncCarregahorario() {
                 var lista = "";
                 $('#divhorario').text('carreguei legal');
                 data.horario.forEach(element => {
-                    lista = lista + '<table "><tr><td class="col-2" >' + element.horario + '</td></tr></table>';
+                    lista = lista + '<table "><tr><td class="col-2" ></td><td class="col-2" ></td><td class="col-2" >' + element.horario + '</td></tr></table>';
                 });
-                console.log(lista);
+                // console.log(lista);
                 tabela.append(cabecalho);
                 tabela.append(corpo);
 
