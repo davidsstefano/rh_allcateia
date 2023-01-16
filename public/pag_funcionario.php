@@ -30,21 +30,19 @@ require_once '../class/nav_funcionario.php';
      <div class="body">
           <form action="../api/api_registrarponto.php" class="col align-self-center" id="formlogin" method="POST" enctype="multipart/form-data">
                <div id="gg" class="form-floating mb-3">
-                    <p class="mx-auto" style="width: 80px;"><?php print_r($dia)?></p>
-                    
+                    <p class="mx-auto" style="width: 80px;"><?php print_r($exibir_data) ?></p>
+
                </div>
                <div id="gg" class="form-floating mb-3">
-                    <p class="mx-auto" style="width: 40px;"><?php print_r($hora)?></p>
-                    
+                    <p class="mx-auto" style="width: 40px;"><?php print_r($hora) ?></p>
+
                </div>
                <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
-               <div id="botao-entrar" class="d-grid gap-1 col-4 mx-auto">
-                    <input type="submit" name="cadastrar" value="registrar ponto" class="btn btn-primary">
-               </div>
-
+               <input type="submit" nome="cadastrar" value="registrar ponto" class="btn form-btn">
 
           </form>
      </div>
+     
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
