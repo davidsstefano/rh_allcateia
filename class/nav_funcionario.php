@@ -47,5 +47,5 @@
         
           
      </div>
-     <li><a class="nav-link" href="../public/logout.php">Sair</a></li>
+     <li><a class="nav-link" href="../api/logout.php">Sair</a></li>
 </nav>
