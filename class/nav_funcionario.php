@@ -8,22 +8,17 @@
 
      <ul class="nav nav-pills">
           <li class="nav-item">
-               <img src="../img/log.png" width="120" alt="" href="/public/pag_adm.php">
+               <img src="../img/log.png" width="120" alt="" href="/public/pag_funcionario.php">
           </li>
 
           <div id="jj" class="nav nav-pills">
                <li class="nav-item">
-                    <a class="nav-link" href="pag_adm.php">Início</a>
+                    <a class="nav-link" href="pag_funcionario.php">Início</a>
                </li>
 
                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Colaborador</a>
-                    <ul class="dropdown-menu">
-                         <li><a class="dropdown-item" href="cadastro_funcionario.php">Cadastrar Colaborador</a></li>
-                         <li><a class="dropdown-item" href="cadastro_cargo.php">Cadastrar Cargo</a></li>
-
-
-                    </ul>
+                    <a class="nav-link" href="../public/historico_ponto.php">Meu historico de ponto</a>
+                   
                </li>
           </div>
           <!-- <li class="nav-item">
@@ -49,14 +44,15 @@
                               }; ?> </p>
 
                <ul id="test" class="dropdown-menu dropdown-menu-end ">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="cadastro_cargo.php">Perfil</a></li>
 
                     <span class="visually-hidden">Toggle Dropend</span>
                     <li>
                          <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="">Sair</a></li>
+                    <li><a class="dropdown-item" href="../public/logout.php">Sair</a></li>
                </ul>
           </button>
+          <li><a class="nav-link" href="../public/logout.php">Sair</a></li>
      </div>
 </nav>

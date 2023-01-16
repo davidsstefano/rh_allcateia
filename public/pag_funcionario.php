@@ -2,6 +2,8 @@
 
 require_once '../class/retorno.php';
 require_once '../class/data_hora.php';
+require_once '../class/nav_funcionario.php';
+
 
 
 
@@ -18,21 +20,12 @@ require_once '../class/data_hora.php';
      <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+     <link rel="stylesheet" href="../css/nav.css">
      <title>ADM</title>
 </head>
 
 <body>
-     <button type="button" class="btn btn-danger"><a href="../api/logout.php" class="link-light">Sair</a></button>
-     <h1>Ola <?php foreach ($db_usuario as $output) {
-                    echo   $output['nome'];
-                    echo " ";
-                    echo $output['sobrenome'];
-               }; ?> </h1>
-     <img src="../img/<?php foreach ($db_usuario as $output) {
 
-                              echo $output['img'];
-                         } ?>" alt="Imagem-Usuario">
 
      <form action="../api/api_registrarponto.php" method="POST">
 
@@ -43,5 +36,6 @@ require_once '../class/data_hora.php';
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </html>

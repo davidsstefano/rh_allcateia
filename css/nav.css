@@ -1,24 +1,24 @@
-body{
+body {
     background-color: aqua;
 }
 
-#btn-colab{
+#btn-colab {
     background-color: rgb(39, 39, 39);
-    border:none;
+    border: none;
 }
 
-#user{
+#user {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     text-align: left;
     align-items: center;
     gap: 6px;
-    background-color:  #212529;
+    background-color: #212529;
     border: none;
     font-weight: 500;
 }
 
-#jj{
+#jj {
     margin-left: 40px;
     font-size: 20px;
     color: aliceblue;
@@ -28,7 +28,7 @@ body{
     align-items: center;
 }
 
-.nav-link{
-color: aliceblue;
-align-items: center;
+.nav-link {
+    color: aliceblue;
+    align-items: center;
 }
