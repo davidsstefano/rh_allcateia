@@ -29,7 +29,7 @@ require_once '../class/nav.php';
 <body>
    
 
-     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3">
+     <form action="../api/api_cadastrousuario.php" method="POST" class="row g-3" enctype="multipart/form-data">
           <h1 class="titulo-login">Cadastro funcionario</h1>
 
 
