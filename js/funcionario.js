@@ -65,7 +65,7 @@ function fncCarregahorario() {
                 $('#divhorario');
                 $('#divhorario').html(lista);
             } else {
-                $('#cadastro');
+                $('#divhorario');
             }
             // console.log(tabela);
             // console.log(botao);
