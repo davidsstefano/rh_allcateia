@@ -54,7 +54,7 @@ function fncCarregahorario() {
                 var lista = "";
                 $('#divhorario').text('carreguei legal');
                 data.horario.forEach(element => {
-                    lista = lista + '<table><tr><td class="col-2" ></td><td class="col-2" ></td><td class="col-2" >' + element.horario + '</td></tr></table>';
+                    lista = lista + '<td class="col-2" >' + element.horario + '</td><td class="col-2" ></td>';
                 });
                 // console.log(lista);
                 tabela.append(cabecalho);

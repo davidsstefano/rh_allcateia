@@ -4,27 +4,9 @@ require_once '../class/retorno.php';
 require_once '../class/data_hora.php';
 require_once '../class/nav_funcionario.php';
 
-
-
-
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-     <script src="https://kit.fontawesome.com/5f18a24258.js" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="../css/nav.css">
-     <link rel="stylesheet" href="../css/pag_funcionario.css">
-     <script src="../js/funcionario.js"></script>
-     <title>ADM</title>
-</head>
+<link rel="stylesheet" href="../css/pag_funcionario.css">
 
 <body>
 
@@ -54,14 +36,13 @@ require_once '../class/nav_funcionario.php';
      <table class="table table-striped">
           <thead>
                <tr>
-                    <th class="col-2">Data</th>
                     <th class="col-2">Entrada</th>
                     <th class="col-2"></th>
-                    <th class="col-2">Intervato</th>
+                    <th class="col-2">Saido-Almoço</th>
+                    <th class="col-2"></th>
+                    <th class="col-2">Retorno-Almoço</th>
                     <th class="col-2"></th>
                     <th class="col-2">Saida</th>
-
-
                </tr>
           </thead>
      </table>
