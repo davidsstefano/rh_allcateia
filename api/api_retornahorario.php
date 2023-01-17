@@ -23,11 +23,7 @@ if (strlen($id_usuario) > 0 && is_numeric($id_usuario) && $id_usuario != 0) {
     $array_filtro_sql['id_usuario'] = $id_usuario;
 }
 
-// if (strlen($dia) > 0 && is_numeric($dia) && $dia != 0) {
-//      //incrementando o campo de tipo no bind e no array para o sql
-//      $sql_bind = $sql_bind . 'AND dia  = :dia';
-//      $array_filtro_sql['dia'] = $dia;
-//  }
+
 
 // print_r($array_filtro_sql);
 // exit;

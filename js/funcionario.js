@@ -10,20 +10,33 @@ $(document).ready(function() {
         return (false);
     });
 
+
+
+
 });
+
+function fncenviar_ponto() {
+
+    $.post("../api/api_registrarponto.php", $('#enviar_ponto').serialize(),
+        function(data, textStatus, jqXHR) {
+            // console.log(data.controle);
+            if (data.controle == 1) {
+
+                alert("Ponto cadastrado com sucesso!!!");
+                document.location.reload(true);
+
+
+            } else {
+                alert("Limite 4 restros por dia!!!");
+
+            }
+        }, "json"
+    );
+}
 
 function fncCarregahorario() {
     var usuario = $('#id_usuario').val();
 
-
-
-
-
-    //     console.log(usuario);
-
-    //     $('#divhorario').html('<div class="spinner-border text-primary" role="status">\
-    //         <span class="sr-only">Loading...</span>\
-    //     </div>');
 
     $.getJSON("../api/api_retornahorario.php", {
 
@@ -41,7 +54,7 @@ function fncCarregahorario() {
                 var lista = "";
                 $('#divhorario').text('carreguei legal');
                 data.horario.forEach(element => {
-                    lista = lista + '<table "><tr><td class="col-2" ></td><td class="col-2" ></td><td class="col-2" >' + element.horario + '</td></tr></table>';
+                    lista = lista + '<table><tr><td class="col-2" ></td><td class="col-2" ></td><td class="col-2" >' + element.horario + '</td></tr></table>';
                 });
                 // console.log(lista);
                 tabela.append(cabecalho);
@@ -59,23 +72,3 @@ function fncCarregahorario() {
 
         })
 };
-
-
-function fncenviar_ponto() {
-
-    $.post("../api/api_registrarponto.php", $('#enviar_ponto').serialize(),
-        function(data, textStatus, jqXHR) {
-            console.log(data.controle);
-            if (data.controle == 1) {
-
-                alert("Ponto cadastrado com sucesso!!!");
-                document.location.reload(true);
-
-
-            } else {
-                alert("Limite 4 restros por dia!!!");
-
-            }
-        }, "json"
-    );
-}
