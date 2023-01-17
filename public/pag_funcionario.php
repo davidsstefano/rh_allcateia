@@ -47,6 +47,20 @@ require_once '../class/nav_funcionario.php';
           </thead>
      </table>
      <div id="divhorario"></div>
+     <table class="table table-striped">
+          <thead>
+               <tr>
+                    <th class="col-2"></th>
+                    <th class="col-2"></th>
+                    <th class="col-2"></th>
+                    <th class="col-2">Intervalo</th>
+                    <th class="col-2"></th>
+                    <th class="col-2"></th>
+                    <th class="col-2"></th>
+               </tr>
+          </thead>
+     </table>
+     <div id="divintervalo"></div>
 
 
 
