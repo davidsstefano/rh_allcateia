@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     fncCarregahorario();
+    fncCarregaintervalo();
 
 
     $('#enviar_ponto').submit(function(e) {
