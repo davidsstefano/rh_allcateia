@@ -7,9 +7,9 @@ $control = 0; //retorno padrao de erro.
 
 if (isset($_POST['id_usuario'])) {
 
-     // print_r($_POST);
-     // print_r($dia);
-     // print_r($hora);
+     // print_r($_POST);echo "<br>";
+     // print_r($dia);echo "<br>";
+     // print_r($hora);echo "<br>"; print_r($abertura_ponto);
      // exit;
 
 
@@ -17,15 +17,10 @@ if (isset($_POST['id_usuario'])) {
      $aprovacao = "ok";
      $observacao = "confirmado";
 
-     $retorno = "SELECT * FROM tbl_ponto WHERE id_usuario = $id_usuario AND dia = CURDATE()";
-     $result = $conn->select($retorno, []);
+   
+          $sql = "INSERT INTO  tbl_ponto (id_usuario,abertura_ponto,aprovacao,observacao)VALUES(:id_usuario,:abertura_ponto, :aprovacao, :observacao)";
 
-     
-
-     if (count($result) < 4) {
-          $sql = "INSERT INTO  tbl_ponto (id_usuario,dia,horario,aprovacao,observacao)VALUES(:id_usuario, :dia, :hora, :aprovacao, :observacao)";
-
-          $novo_id = $conn->insert($sql, array('id_usuario' => $id_usuario, 'dia' => $dia, 'hora' => $hora, 'aprovacao' => $aprovacao, 'observacao' => $observacao));
+          $novo_id = $conn->insert($sql, array('id_usuario' => $id_usuario, 'abertura_ponto'=> $abertura_ponto, 'aprovacao' => $aprovacao, 'observacao' => $observacao));
 
 
           if ($novo_id > 0) {
@@ -36,7 +31,7 @@ if (isset($_POST['id_usuario'])) {
      } else {
           $control = 3;
      }
-}
+
 
 header('Content-Type: application/json; charset=utf-8');
 

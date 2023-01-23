@@ -32,8 +32,7 @@ $sql ="
 select
 usu.id_usuario,
 usu.nome,
-pon.dia,
-pon.horario
+DATE_FORMAT(pon.abertura_ponto , '%H:%i:%s') as horario
 
 
 FROM
@@ -45,9 +44,7 @@ INNER JOIN
     usu.id_usuario = pon.id_usuario
 WHERE
 $sql_bind AND 
-dia = CURDATE()
-order by
-horario
+DATE(abertura_ponto) = CURDATE();
 
 ";
 

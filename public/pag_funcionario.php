@@ -12,14 +12,7 @@ require_once '../class/nav_funcionario.php';
 
      <div class="body-form">
           <form id="enviar_ponto" class="col align-self-center">
-               <div id="gg" class="form-floating mb-3">
-                    <p class="mx-auto" style="width: 80px;"><?php print_r($exibir_data) ?></p>
 
-               </div>
-               <div id="gg" class="form-floating mb-3">
-                    <p class="mx-auto" style="width: 40px;"><?php print_r($hora) ?></p>
-
-               </div>
                <input type="hidden" name="id_usuario" id="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
 
 
@@ -29,10 +22,10 @@ require_once '../class/nav_funcionario.php';
 
      </div>
      <div class="d-grid gap-2">
-     <button class="btn btn-primary" onclick="fncenviar_ponto()">Registrar Ponto</button>
-         
+          <button class="btn btn-primary" onclick="fncenviar_ponto()">Registrar Ponto</button>
+
      </div>
-     
+
      <table class="table table-striped">
           <thead>
                <tr>
