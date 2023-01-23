@@ -12,22 +12,20 @@ WHERE id_usuario = '9' AND dia = CURDATE()";
 
 $result = $conn->select($sql, []);
 
-foreach ($result as $output){
-    
-    
+
+
+foreach ($result as $output => $val) {
+     echo "$output = $val<br>";
 };
 
-// var_dump($result) ;
-print_r($result['0']);
-echo "<br>";
-print_r($result['1']);
-echo "<br>";
-print_r($result['2']);
-echo "<br>";
-print_r($result['3']);
+print_r($result);
+
+// $primeiro_h = $output['horario'];
 
 
-
-
-echo "<br>";
-echo $intervalo;
+// echo "<br>";
+// echo $intervalo;
+// echo "<br>";
+// echo $primeiro_h;
+// echo "<br>";
+// print_r($segundo_h) ;
