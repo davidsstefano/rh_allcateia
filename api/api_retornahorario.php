@@ -6,10 +6,6 @@ session_start();
 //capturando os filtros pro  retorno do JSON
 
 $id_usuario = (isset($_GET['id_usuario'])) ? $_GET['id_usuario'] : null;
-$dia = (isset($_GET['dia']))? $_GET['dia']: null;
-
-// print_r($_GET);
-// exit;
 
 //criando o array do filtro SQL
 // $tipo_consulta = 'vazio';
