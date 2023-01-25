@@ -21,6 +21,7 @@ require_once '../class/nav_funcionario.php';
 
 
      </div>
+     <a href="../api/api_teste.php">aqui</a>
      <div class="d-grid gap-2">
           <button class="btn btn-primary" onclick="fncenviar_ponto()">Registrar Ponto</button>
 
