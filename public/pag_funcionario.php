@@ -13,7 +13,7 @@ require_once '../class/nav_funcionario.php';
      <div class="body-form">
           <form id="enviar_ponto" class="col align-self-center">
 
-               <input type="hidden" name="id_usuario" id="id_usuario" value="<?php echo $_SESSION['id_usuario']; ?>" />
+               
 
 
 
